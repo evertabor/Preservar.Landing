@@ -191,6 +191,11 @@ footer .contactos {
 }
 .servicios{
   background-color:rgba(184, 183, 183, .5) ;
+  margin-top: -40px;
+}
+.c-servicios{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 @media screen and (max-width: 900px) {
   .telefono ul {
