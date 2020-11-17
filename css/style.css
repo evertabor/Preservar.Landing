@@ -80,11 +80,9 @@ ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
   overflow: hidden;
   position: relative;
-  height: 100%;
-  margin-top: -47px;
+  padding: 70px 30px;
 }
 .imagen picture img {
   width: 100%;
@@ -102,16 +100,19 @@ ul li a:hover {
   margin-bottom: 20px;
 }
 .fnd-1 {
-  padding: 20px;
-  background:linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%)); */
+  
+  /* background:linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%)); */
   position: absolute;
-  border-radius: 600px 0px 20px 600px; */
+  /* border-radius: 600px 0px 20px 600px; */
   height: 300px;
   width: 400px;
   right: 0;
+  bottom: 0;
   z-index: 1;
   right: -30px;
-  
+  border-left: 400px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 600px solid var(--colorGeneral);
 }
 
 .btn-salir {
@@ -188,9 +189,26 @@ footer .contactos {
   font-size: 20px;
 }
 .servicios{
-  background-color:rgba(184, 183, 183, .5) ;
+
+  background-color:rgba(110, 106, 106, 0.13) ;
+  
+}
+.c-servicios{
+  padding: 20px;
+  flex-wrap: wrap;
+  display:flex;
+  justify-content:space-between;
 }
 @media screen and (max-width: 900px) {
+  .c-servicios{
+    display: block;
+  }
+  .c-servicios div{
+    margin-bottom: 60px;
+  }
+  .servicios{
+    margin-top: 30px;
+  }
   .telefono ul {
     display: block;
     color: white;
@@ -210,6 +228,7 @@ footer .contactos {
   .all-bienvenida {
     display: block;
     margin-top: 10px;
+    margin-bottom: 30px;
   }
   .descripcion {
     margin: 0 auto;
@@ -220,15 +239,15 @@ footer .contactos {
   .fnd-1 {
     display: none;
   }
-  footer {
-    margin-top: 70px;
-  }
+  
 }
 
 
 /* LOGIN */
 
 .setInicio {
+  
+
     padding: 70px;
     height: 450px;
   
@@ -298,8 +317,9 @@ footer .contactos {
   
   }
   .cont-bienvenida img{
-    display: block;
+    height: 450px;
   }
+  
   .contenedor{
     display: flex;
     margin: 0 auto;
