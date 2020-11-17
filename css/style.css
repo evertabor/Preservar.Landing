@@ -1,0 +1,410 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
+}
+:root {
+  --colorGeneral: hsl(140, 83%, 48%);
+  --colorGeneralHover: hsl(140, 66%, 29%);
+}
+html,
+body {
+  height: 100%;
+}
+/* COMINEZO DE ESTILOS DE LA HEADER  Y EL NAV */
+header {
+  display: flex;
+  padding: 15px 35px;
+  height: 60px;
+  width: 100%;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 1px 5px hsl(233, 8%, 62%);
+}
+.logoimg{
+  width: 100px;
+}
+.logo h2,
+span {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.logo span {
+  padding: 3px;
+  color: white;
+  font-size: 29px;
+  background-color: var(--colorGeneral);
+}
+ul {
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+ul li a {
+  text-decoration: none;
+  color: rgb(2, 2, 2);
+  display: block;
+  margin-right: 23px;
+
+  padding: 7px;
+  transition: 0.5s;
+  margin: 0 auto;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+ul li a:hover {
+  background-color: var(--colorGeneral);
+  color: white;
+}
+.iniciar {
+  color: white;
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 50px;
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+
+/* FIN ESTILOS */
+
+/* ESTILOS DEL LA BIENNVENIDA */
+.all-bienvenida {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  margin-top: -47px;
+}
+.imagen picture img {
+  width: 100%;
+  z-index: 1000 !important;
+}
+.descripcion {
+  z-index: 900;
+  padding-left: 30px;
+  max-width: 500px;
+}
+.descripcion h1 {
+  margin-bottom: 20px;
+}
+.descripcion p {
+  margin-bottom: 20px;
+}
+.fnd-1 {
+  padding: 20px;
+  /* background:linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%)); */
+  position: absolute;
+  /* border-radius: 600px 0px 20px 600px; */
+  height: 300px;
+  width: 400px;
+  right: 0;
+  z-index: 1;
+  right: -30px;
+  border-left: 400px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 600px solid var(--colorGeneral);
+}
+
+.btn-salir {
+  display: none;
+}
+
+.lema {
+  margin-top: 90px;
+  padding: 49px;
+  background-image: url("../img/bg1.jpg");
+  background-attachment: fixed;
+  box-shadow: 0px 1px 5px hsl(233, 8%, 62%);
+  position: relative;
+}
+.lema div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(17, 17, 17, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 23px;
+  padding: 20px;
+}
+footer {
+  box-shadow: 0px 1px 5px hsl(233, 8%, 62%);
+  padding: 10px 40px;
+  background-color: #091d37;
+  color: white;
+}
+.datosuniversidad {
+  text-align: center;
+}
+hr {
+  border: 0;
+  height: 2px;
+  margin-top: 10px;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0)
+  );
+}
+footer .contactos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sigmenu {
+  margin-top: 30px;
+}
+.sig a {
+  font-size: 30px;
+  text-decoration: none;
+  color: var(--colorGeneral);
+  margin-right: 5px;
+}
+.sig a:hover {
+  color: gray;
+}
+.menu-bar {
+  padding: 20px;
+  background-color: #091d37;
+}
+.btn-menu {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 20px;
+}
+.servicios{
+  background-color:rgba(184, 183, 183, .5) ;
+}
+@media screen and (max-width: 900px) {
+  .telefono ul {
+    display: block;
+    color: white;
+  }
+  .telefono {
+    margin-top: 30px;
+  }
+  .iniciar {
+    margin: 0;
+  }
+  .btn-salir {
+    display: block;
+  }
+  .destok {
+    display: none;
+  }
+  .all-bienvenida {
+    display: block;
+    margin-top: 10px;
+  }
+  .descripcion {
+    margin: 0 auto;
+    margin-top: 70px;
+    padding-left: 0px;
+    margin-bottom: 20px;
+  }
+  .fnd-1 {
+    display: none;
+  }
+  footer {
+    margin-top: 70px;
+  }
+}
+
+
+/* LOGIN */
+
+.setInicio {
+  
+
+    padding: 70px;
+    height: 450px;
+  
+    position: relative;
+  
+    display: flex;
+  
+    justify-content: center;
+    background-image: url(../img/ali.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .registrate{
+    text-decoration: underline;
+    margin-bottom: 2px;
+  }
+  .grande{
+    width: 90%;
+    opacity: 0;
+  }
+  .setInicio .inicio{
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 20px;
+    padding-top: 30px;  
+    background-color: rgba(0, 0, 0, .8);
+  }
+  .label{
+     font-size: 20px;
+  }
+  
+  .bienvenida {
+    display: block;
+  }
+  
+  
+  .error {
+    color: red;
+    font-weight: 700;
+  }
+  
+  .bg-1 {
+    position: fixed;
+    left: -80px;
+    bottom: 0;
+  }
+  
+  .icono1,
+  .icono2 {
+    color: white;
+    border: none;
+    background-color: var(--colorGeneral);
+  }
+  
+  .container-inicio {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+    
+  
+  }
+  .cont-bienvenida img{
+    display: block;
+  }
+  .contenedor{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 4px gray;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--colorGeneral);
+    color: white;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .setInicio input[type="text"],.pass{
+    background: none;
+  
+    border: none;
+    color:white;
+    border-bottom: 2px solid white;
+    
+    
+  }
+  .setInicio input[type="text"],.pass:focus{
+    outline:none !important;
+    outline-width: 0 !important;
+    background: none;
+  
+  }
+  
+  input[type="button"] {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    background-color: var(--colorPredeteminado);
+    color: white;
+    border-radius: 20px;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .ingreso {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: var(--colorGeneralHover);
+    color: white;
+  }
+  .inicio{
+      position: relative;
+  }
+  .circulo{
+      height: 100px;
+      width: 100px;
+      border-radius: 300px;
+      background-color: rgb(12, 12, 12);
+      position: absolute;
+      top: -70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+color: white;
+box-shadow: 2px 1px 4px white;
+      left: 165px;
+      font-size: 70px;
+  }
+  
+@media screen and (max-width: 980px) {
+
+    .bienvenida {
+      display: none;
+      width: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      height: 200px;
+      margin-bottom: 120px;
+    }
+    .setInicio{
+      width: 95%;
+    }
+    .contenedor{
+      box-shadow: none;
+    }
+    
+  }
+  @media screen and (max-width: 400px) {
+    footer .contactos {
+      display: block;
+    }
+    .datosuniversidad {
+      text-align: left;
+    }
+    .circulo{
+     
+      top: -70px;
+      left: 135px;
+      font-size: 70px;
+  }
+  
+  }

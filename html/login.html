@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <meta name="description" content="Pagina de capacitaciones de manejo de alimentos">
+    <meta name="author" content="NNOVA">
+    <meta name="keywords" content="Capacitaciones de manejo de alimentos, empresas productoras de alimentos">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/logo.png">
+    <title>Inicio de sesion</title>
+    <!-- CDN DE DE LAS FUENTES DE GOOGLE -->
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;1,300;1,600&display=swap"
+        rel="stylesheet">
+    <!-- CDN DE FONTAWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!-- Mis estilos -->
+
+    <!-- CDN DE BOOSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/pushbar.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <picture>
+                <img src="../img/logo.png" class="logoimg" alt="">
+            </picture>
+        </div>
+        <a href="#" data-pushbar-target="mypushbar1" class="btn-salir">
+            <svg id="ham" class="hamburgueza" xmlns="http://www.w3.org/2000/svg" width="24" height="11">
+                <g fill="#2D314D" fill-rule="evenodd">
+                    <path d="M0 0h24v1H0zM0 5h24v1H0zM0 10h24v1H0z" />
+                </g>
+            </svg>
+        </a>
+        <div id="telefono" data-pushbar-id="mypushbar1" data-pushbar-direction="left" class="pushbar pushbar-menu menu-bar">
+            
+            
+            <div class="d-flex justify-content-between text-white">
+                <div class="logo">
+                    <picture>
+                        <img src="../img/logo.png" class="logoimg" alt="">
+                    </picture>
+                </div>
+                <button data-pushbar-close class="btn-menu"><i class="fas fa-chevron-left"></i></button>
+                
+            </div>
+            <hr>
+            <nav class="telefono" id="telefono">
+                <ul>
+                    <li><a href="index.html" class="text-white mb-4">Acerca de </a></li>
+                    <li><a class="iniciar text-center" href="login.html">Iniciar sesion</a></li>
+                </ul>
+    
+            </nav>
+            <hr>
+            <div class="sigmenu">
+                <div>
+                    <p class="contacta">Contactanos</p>
+                </div>
+                <div class="sig">
+
+                    <a href="https://www.facebook.com/UniversidadUNAD" target="_blank"><i
+                            class="fab fa-facebook-square"></i></a>
+                    <a href="https://twitter.com/UniversidadUNAD" target="_blank"><i
+                            class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.youtube.com/c/universidadunadTvUnadVirtual" target="_blank"><i
+                            class="fab fa-youtube-square"></i></a>
+                    <a href="https://www.instagram.com/universidadunad/" target="_blank"><i
+                            class="fab fa-instagram-square"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        
+        <nav class="destok" id="telefono">
+            <ul>
+                <li><a href="index.html">Acerca de</a></li>
+                <li><a class="iniciar" href="login.html">Iniciar sesion</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="container-inicio">
+        <div class="contenedor">
+            <div class="cont-bienvenida">
+
+                <img width="500px" src="../img/wel.JPG" class="bienvenida" alt="imagen bienvenida">
+
+            </div>
+
+            <form action="" method="post" class="setInicio">
+                <div class="grande">Lorem, ipsum dolor sit amet consectetur </div>
+                <div class="inicio">
+                    <div class="circulo"><span><i class="fas fa-user"></i></span></div>
+
+                    <h1 class="mb-4 text-center text-light mt-4"> Inicio de sesion</h1>
+                    <label for="" class="text-left text-light label">Usuario</label>
+                    <div class="input-group form-group mt-4">
+                        <div class="input-group-prepend">
+                            <span class="icono1 input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" name="usuario" required class="form-control p-3" id="usuario">
+                    </div>
+                    <label for="" class="text-left text-light label">Contraseña</label>
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="icono2 input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+                        <input title="Ingrese una contraseña" type="password" required name="password"
+                            class="form-control p-3 pass" id="contraseña">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" name="btn-enviar" value="Ingresar" class="btn enviar" id="ingresar">
+                    </div>
+                    <a href="registrar.php?accion=crearcargo" class="float-right registrate">Registrarse</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- <footer>
+        <div class="contactos">
+            <div class="">
+                <div class="logo">
+                    <h2><span>N</span>NOVA</h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="contacta">Contactanos</p>
+                </div>
+                <div class="sig">
+
+                    <a href="https://www.facebook.com/UniversidadUNAD" target="_blank"><i
+                            class="fab fa-facebook-square"></i></a>
+                    <a href="https://twitter.com/UniversidadUNAD" target="_blank"><i
+                            class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.youtube.com/c/universidadunadTvUnadVirtual" target="_blank"><i
+                            class="fab fa-youtube-square"></i></a>
+                    <a href="https://www.instagram.com/universidadunad/" target="_blank"><i
+                            class="fab fa-instagram-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="datosuniversidad">
+            <p>
+                Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de Educación
+                Nacional
+                <a href="#">SNIES 2102</a>
+            </p>
+            <p>
+                Cartagena Bolivar
+            </p>
+            <p>
+                ©Copyright UNAD 2020
+            </p>
+        </div>
+    </footer> -->
+    <script src="../js/main.js"></script>
+    <script src="../js/pushbar.js"></script>
+    <script>
+        const pushbar = new Pushbar({
+            blur: true,
+            overlay: true
+        });
+
+    </script>
+</body>
+
+</html>
