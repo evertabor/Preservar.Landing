@@ -19,8 +19,9 @@ header {
   height: 60px;
   width: 100%;
   z-index: 1000;
-  position: sticky;
+  position: fixed;
   top: 0;
+
   background-color: white;
   align-items: center;
   justify-content: space-between;
@@ -32,6 +33,7 @@ header {
 .logo h2,
 span {
   font-family: "Times New Roman", Times, serif;
+  display: inline;
 }
 
 .logo span {
@@ -103,16 +105,36 @@ ul li a:hover {
   
   /* background:linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%)); */
   position: absolute;
-  /* border-radius: 600px 0px 20px 600px; */
+  
   height: 300px;
   width: 400px;
   right: 0;
-  bottom: 0;
+  top: -30px;
   z-index: 1;
   right: -30px;
-  border-left: 400px solid transparent;
-  border-right: 0px solid transparent;
-  border-bottom: 600px solid var(--colorGeneral);
+  
+}
+.fnd-2{
+  position: absolute;
+  
+  height: 300px;
+  width: 400px;
+  left: 0;
+  top: -30px;
+  z-index: 1;
+  right: -30px;
+}
+.imp{
+  padding: 4px;
+  background:rgba(212, 209, 209, 0.37);
+}
+.raya{
+  padding: 2px;
+  background-color: var(--colorGeneral);
+  width: 180px;
+
+  margin-top: -10px;
+  margin-bottom: 30px;
 }
 
 .btn-salir {
@@ -189,17 +211,27 @@ footer .contactos {
   border: none;
   font-size: 20px;
 }
+.quehacemos{
+  padding: 10px 120px;
+}
 .servicios{
 
   background-color:rgba(138, 138, 138, 0.027) ;
+  padding: 20px;
+  position: relative;overflow: hidden;
   
+}
+ol li{
+  font-size: 17px;
 }
 .c-servicios{
   padding: 20px;
-  flex-wrap: wrap;
-  display:flex;
-  justify-content:space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  z-index: 500;
 }
+
 @media screen and (max-width: 900px) {
   .c-servicios{
     display: block;
@@ -313,7 +345,7 @@ footer .contactos {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 90px;
+    margin-top: 150px;
     
   
   }
